@@ -1,29 +1,26 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
-favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
+title = "Yi Sun"
+description = "Undergraduate Student of Microelectronic Science and Engineering"
+favicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2215%22 fill=%22%23000%22/><text x=%2250%22 y=%2275%22 font-size=%2270%22 font-family=%22Arial%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>Y</text></svg>"
+
 
 [author]
-name = "Jiale Liu"
-title = "PhD Student"
-institution = "University of Example"
-avatar = "/bio.jpg"
+name = "Yi Sun (孙燚)"
+title = "Undergraduate Student"
+institution = "South China University of Technology ＆ University of California Berkeley"
+avatar = "/yicun.JPG"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
+email = "ecesunyi@gmail.com & misunyi0219@163.com"
+location = "Berkeley, United States"
+location_url = "https://www.google.com/maps/place/Berkeley"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "Berkeley, United States"
 ]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+
+linkedin = "https://www.linkedin.com/in/yi-sun-8754b7389/?locale=zh_CN"
 
 [features]
 # Show a like button on the about page
@@ -45,25 +42,30 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
-type = "page"
-target = "teaching"
-href = "/teaching"
-
-[[navigation]]
-title = "Awards"
+title = "Honors and Awards"
 type = "page"
 target = "awards"
 href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
 
 [[navigation]]
 title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
+
+[[navigation]]
+title = "Life Moment"
+type = "page"
+target = "life"
+href = "/life"
+url = "/life"
+
+
+
+[[menu]]
+name = "English CV"           # 菜单上显示的文字
+url = "/CV_YiSUN.pdf"         # 对应 public 目录中的文件名
+
+[[menu]]
+name = "中文简历"             # 菜单上显示的文字
+url = "/简历-孙燚.pdf"         # 对应 public 目录中的文件名

@@ -1,27 +1,81 @@
 type = "card"
-title = "Awards"
+title = "Honors and Awards"
 description = "Honors and awards I have received."
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "National Scholarship"
+subtitle = "Top 0.2% university students in China"
+date = "2024-2025"
+content = "10000 CNY/year"
+
+[[items]]
+title = "National Scholarship"
+subtitle = "Top 0.2% university students in China"
+date = "2023-2024"
+content = "10000 CNY/year"
+
+[[items]]
+title = "First-Class Scholarship"
+subtitle = "Top 1% students at South China University of Technology"
+date = "2024-2025"
+content = "30000 CNY/year"
+
+[[items]]
+title = "First-Class Scholarship"
+subtitle = "Top 1% students at South China University of Technology"
+date = "2023-2024"
+content = "30000 CNY/year"
+
+[[items]]
+title = "Outstanding Student Scholarship"
+subtitle = "Top 1% students at South China University of Technology"
+date = "2024-2025"
+content = "30000 CNY/year"
+
+[[items]]
+title = "“Holedfound” Enterprise Scholarship"
+subtitle = "South China University of Technology"
+date = "2024-2025"
+content = "8000 CNY/year"
+
+[[items]]
+title = " “Xiao Noodle” Enterprise Scholarship"
+subtitle = "South China University of Technology"
+date = "2024-2025"
+content = "1000 CNY/year"
+
+[[items]]
+title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition National Final"
+subtitle = "Competing against master's and undergraduate students"
 date = "2025"
-content = "Description of the award."
+content = "Third Prize"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
+title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition South China Regional"
+subtitle = "Competing against master's and undergraduate students"
+date = "2025"
+content = "First Prize"
+
+[[items]]
+title = "16th National Undergraduate Mathematics Competition"
+subtitle = "Chinese Mathematical Society"
 date = "2024"
-content = "Description of the award."
+content = "First Prize"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2023"
-content = "Description of the award."
+title = "Mathematical Contest in Modeling (MCM)"
+subtitle = "Modeling Contest"
+date = "2024"
+content = "Honorable Mention"
 
 [[items]]
-title = "Example Award"
-subtitle = "Organization"
-date = "2022"
-content = "Description of the award."
+title = " 14th APMCM Asia-Pacific Mathematical Contest in Modeling"
+subtitle = "Modeling Contest"
+date = "2024"
+content = "Third Prize"
+
+[[items]]
+title = " National Undergraduate Mathematical Modeling Competition Guangdong Division"
+subtitle = "Modeling Contest"
+date = "2024"
+content = "Winning Prize"

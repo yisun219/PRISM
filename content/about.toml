@@ -3,9 +3,9 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Computer Architecture and Computer Systems",
+  "High Performance AI Chip",
+  "Hardware-Software Co-design"
 ]
 
 [[sections]]
