@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 export interface EducationItem {
     school: string;
     degree?: string;
+    gpa?: string;
     date?: string;
     logo?: string;
     location?: string;
@@ -41,6 +42,11 @@ export default function Education({ items, title = 'Education' }: EducationProps
                             <p className="text-[0.95rem] font-semibold text-primary leading-snug">{item.school}</p>
                             {item.degree && (
                                 <p className="mt-1 text-sm leading-snug text-neutral-700 dark:text-neutral-600">{item.degree}</p>
+                            )}
+                            {item.gpa && (
+                                <p className="mt-1 text-xs font-semibold text-accent-dark dark:text-accent">
+                                    GPA: {item.gpa}
+                                </p>
                             )}
                             {item.location && (
                                 <p className="mt-1 text-xs text-neutral-500">{item.location}</p>

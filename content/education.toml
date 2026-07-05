@@ -1,6 +1,7 @@
 # Education history. Each [[items]] is one school.
 #   school   - institution name
 #   degree   - degree / program (optional)
+#   gpa      - grade point average (optional)
 #   date     - time span shown on the right
 #   logo     - path to the school logo under /public (校徽)
 #   location - city, country (optional)
@@ -8,6 +9,7 @@
 [[items]]
 school = "South China University of Technology"
 degree = "B.E. in Microelectronic Science and Engineering"
+gpa = "3.97 / 4.00"
 date = "Sep 2023 – Jun 2027"
 logo = "/logos/scut-emblem.png"
 location = "Guangzhou, China"
@@ -15,6 +17,7 @@ location = "Guangzhou, China"
 [[items]]
 school = "University of California, Berkeley"
 degree = "Visiting Student in Electrical Engineering and Computer Science"
+gpa = "4.00 / 4.00"
 date = "Jan 2026 – May 2026"
 logo = "/logos/berkeley.svg"
 location = "Berkeley, USA"
