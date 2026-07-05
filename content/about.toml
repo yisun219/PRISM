@@ -4,9 +4,7 @@ title = "About"
 [profile]
 research_interests = [
   "AI for Architecture",
-  "Architecture for AI",
-  "High-Performance AI Chips",
-  "Hardware-Software Co-Design"
+  "Architecture for AI"
 ]
 
 [[sections]]
