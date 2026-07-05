@@ -1,30 +1,33 @@
 [site]
 title = "Yi Sun"
-description = "Undergraduate Student of Microelectronic Science and Engineering"
-favicon = "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2215%22 fill=%22%23000%22/><text x=%2250%22 y=%2275%22 font-size=%2270%22 font-family=%22Arial%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22>Y</text></svg>"
+description = "Yi Sun is an undergraduate researcher working on computer architecture, AI accelerators, and hardware-software co-design."
+url = "https://yisun219.github.io"
+favicon = "/favicon.svg"
+last_updated = "July 5, 2026"
 
 
 [author]
 name = "Yi Sun (孙燚)"
-title = "Undergraduate Student"
-institution = "South China University of Technology ＆ University of California Berkeley"
+title = "Undergraduate Researcher"
+institution = "South China University of Technology"
 avatar = "/yicun.JPG"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "ecesunyi@gmail.com & misunyi0219@163.com"
-location = "Berkeley, United States"
-location_url = "https://www.google.com/maps/place/Berkeley"
+email = "ecesunyi@gmail.com"
+location = "Guangzhou, China"
+location_url = "https://www.google.com/maps/place/Guangzhou"
 location_details = [
-  "Berkeley, United States"
+  "Guangzhou, China"
 ]
 
-linkedin = "https://www.linkedin.com/in/yi-sun-8754b7389/?locale=zh_CN"
+github = "https://github.com/yisun219"
+linkedin = "https://www.linkedin.com/in/yi-sun-8754b7389/"
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false
@@ -42,30 +45,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Honors and Awards"
+title = "Honors & Awards"
 type = "page"
 target = "awards"
 href = "/awards"
-
-[[navigation]]
-title = "CV"
-type = "page"
-target = "cv"
-href = "/cv"
-
-[[navigation]]
-title = "Life Moment"
-type = "page"
-target = "life"
-href = "/life"
-url = "/life"
-
-
-
-[[menu]]
-name = "English CV"           # 菜单上显示的文字
-url = "/CV_YiSUN.pdf"         # 对应 public 目录中的文件名
-
-[[menu]]
-name = "中文简历"             # 菜单上显示的文字
-url = "/简历-孙燚.pdf"         # 对应 public 目录中的文件名

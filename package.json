@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "node scripts/check-node-version.mjs && next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -36,6 +36,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "22.x"
   }
 }

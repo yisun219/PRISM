@@ -45,6 +45,8 @@ PRISM stands for **P**ortfolio & **R**esearch **I**nterface **S**ite **M**aker. 
 
 3.  **Run the development server:**
 
+    This project expects **Node.js 22** for local development. If you use `nvm`, run `nvm use` first.
+
     ```bash
     npm run dev
     ```

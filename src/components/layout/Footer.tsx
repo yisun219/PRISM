@@ -13,10 +13,9 @@ export default function Footer({ lastUpdated }: FooterProps) {
             Last updated: {lastUpdated || new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
           <p className="text-xs text-neutral-500 flex items-center">
-            <a href="https://github.com/xyjoey/PRISM" target="_blank" rel="noopener noreferrer">
+            <a className="hover:text-accent transition-colors" href="https://github.com/yisun219/PRISM" target="_blank" rel="noopener noreferrer">
               Built with PRISM
             </a>
-            <span className="ml-2">🚀</span>
           </p>
         </div>
       </div>

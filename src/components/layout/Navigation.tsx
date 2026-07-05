@@ -90,7 +90,7 @@ export default function Navigation({ items, siteTitle, enableOnePageMode }: Navi
               'transition-all duration-300 ease-out',
               scrolled
                 ? 'bg-background/80 backdrop-blur-xl border-b border-neutral-200/50 shadow-lg'
-                : 'bg-transparent'
+                : 'bg-background/70 backdrop-blur-md border-b border-neutral-200/40'
             )}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

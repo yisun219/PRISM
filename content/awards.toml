@@ -1,6 +1,6 @@
 type = "card"
-title = "Honors and Awards"
-description = "Honors and awards I have received."
+title = "Honors & Awards"
+description = "Selected scholarships, competitions, and academic distinctions."
 
 [[items]]
 title = "National Scholarship"
@@ -33,25 +33,25 @@ date = "2024-2025"
 content = "30000 CNY/year"
 
 [[items]]
-title = "“Holedfound” Enterprise Scholarship"
+title = "Holedfound Enterprise Scholarship"
 subtitle = "South China University of Technology"
 date = "2024-2025"
 content = "8000 CNY/year"
 
 [[items]]
-title = " “Xiao Noodle” Enterprise Scholarship"
+title = "Xiao Noodle Enterprise Scholarship"
 subtitle = "South China University of Technology"
 date = "2024-2025"
 content = "1000 CNY/year"
 
 [[items]]
-title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition National Final"
+title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition — National Final"
 subtitle = "Competing against master's and undergraduate students"
 date = "2025"
 content = "Third Prize"
 
 [[items]]
-title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition South China Regional"
+title = "9th National Integrated Circuit Innovation and Entrepreneurship Competition — South China Regional"
 subtitle = "Competing against master's and undergraduate students"
 date = "2025"
 content = "First Prize"
@@ -69,13 +69,13 @@ date = "2024"
 content = "Honorable Mention"
 
 [[items]]
-title = " 14th APMCM Asia-Pacific Mathematical Contest in Modeling"
+title = "14th APMCM Asia-Pacific Mathematical Contest in Modeling"
 subtitle = "Modeling Contest"
 date = "2024"
 content = "Third Prize"
 
 [[items]]
-title = " National Undergraduate Mathematical Modeling Competition Guangdong Division"
+title = "National Undergraduate Mathematical Modeling Competition — Guangdong Division"
 subtitle = "Modeling Contest"
 date = "2024"
 content = "Winning Prize"

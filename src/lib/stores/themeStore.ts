@@ -9,6 +9,33 @@ interface ThemeStore {
   toggleTheme: () => void; // toggles between light/dark (explicit override)
 }
 
+const noopStorage: Storage = {
+  getItem: () => null,
+  setItem: () => { },
+  removeItem: () => { },
+  clear: () => { },
+  key: () => null,
+  length: 0,
+};
+
+function getThemeStorage(): Storage {
+  if (typeof window === 'undefined') {
+    return noopStorage;
+  }
+
+  const storage = window.localStorage;
+  if (
+    storage &&
+    typeof storage.getItem === 'function' &&
+    typeof storage.setItem === 'function' &&
+    typeof storage.removeItem === 'function'
+  ) {
+    return storage;
+  }
+
+  return noopStorage;
+}
+
 export const useThemeStore = create<ThemeStore>()(
   persist(
     (set, get) => ({
@@ -28,16 +55,8 @@ export const useThemeStore = create<ThemeStore>()(
     }),
     {
       name: 'theme-storage',
-      storage: createJSONStorage(() => {
-        if (typeof window !== 'undefined') {
-          return localStorage;
-        }
-        return {
-          getItem: () => null,
-          setItem: () => { },
-          removeItem: () => { },
-        };
-      }),
+      storage: createJSONStorage(getThemeStorage),
+      skipHydration: true,
     }
   )
 );

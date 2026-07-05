@@ -5,6 +5,7 @@ import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
 import News, { NewsItem } from '@/components/home/News';
+import Education, { EducationItem } from '@/components/home/Education';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
 import CardPage from '@/components/pages/CardPage';
@@ -15,7 +16,7 @@ import { BasePageConfig, PublicationPageConfig, TextPageConfig, CardPageConfig }
 // Define types for section config
 interface SectionConfig {
   id: string;
-  type: 'markdown' | 'publications' | 'list';
+  type: 'markdown' | 'publications' | 'list' | 'education';
   title?: string;
   source?: string;
   filter?: string;
@@ -23,6 +24,7 @@ interface SectionConfig {
   content?: string;
   publications?: Publication[];
   items?: NewsItem[];
+  education?: EducationItem[];
 }
 
 type PageData =
@@ -64,6 +66,13 @@ export default function Home() {
           return {
             ...section,
             items: newsData?.news || []
+          };
+        }
+        case 'education': {
+          const eduData = section.source ? getTomlContent<{ items: EducationItem[] }>(section.source) : null;
+          return {
+            ...section,
+            education: eduData?.items || []
           };
         }
         default:
@@ -128,24 +137,23 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
+    <div className="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 py-10 lg:py-16 min-h-screen">
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-[17rem_minmax(0,1fr)] gap-12 lg:gap-16">
 
         {/* Left Column - Profile */}
-        <div className="lg:col-span-1">
+        <div>
           <Profile
             author={config.author}
             social={config.social}
-            features={config.features}
             researchInterests={researchInterests}
           />
         </div>
 
         {/* Right Column - Content */}
-        <div className="lg:col-span-2 space-y-8">
+        <div className="min-w-0 space-y-10">
           {pagesToShow.map((page) => (
-            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
+            <section key={page.id} id={page.id} className="scroll-mt-24 space-y-10">
               {page.type === 'about' && page.sections.map((section: SectionConfig) => {
                 switch (section.type) {
                   case 'markdown':
@@ -170,6 +178,14 @@ export default function Home() {
                       <News
                         key={section.id}
                         items={section.items || []}
+                        title={section.title}
+                      />
+                    );
+                  case 'education':
+                    return (
+                      <Education
+                        key={section.id}
+                        items={section.education || []}
                         title={section.title}
                       />
                     );

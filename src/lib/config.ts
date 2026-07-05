@@ -6,6 +6,7 @@ export interface SiteConfig {
     site: {
         title: string;
         description: string;
+        url?: string;
         favicon: string;
         last_updated?: string;
     };
@@ -55,7 +56,6 @@ export function getConfig(): SiteConfig {
         return config;
     } catch (error) {
         console.error('Error loading config:', error);
-        // Return a default config or throw
         throw new Error('Failed to load content/config.toml');
     }
 }

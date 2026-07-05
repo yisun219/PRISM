@@ -3,9 +3,10 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computer Architecture and Computer Systems",
-  "High Performance AI Chip",
-  "Hardware-Software Co-design"
+  "AI for Architecture",
+  "Architecture for AI",
+  "High-Performance AI Chips",
+  "Hardware-Software Co-Design"
 ]
 
 [[sections]]
@@ -13,6 +14,12 @@ id = "about"
 type = "markdown"
 source = "bio.md"
 title = "About"
+
+[[sections]]
+id = "education"
+type = "education"
+title = "Education"
+source = "education.toml"
 
 [[sections]]
 id = "featured_publications"

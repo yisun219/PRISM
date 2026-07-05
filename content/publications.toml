@@ -1,3 +1,4 @@
 type = "publication"
 title = "Publications"
+description = "Peer-reviewed publications and conference papers."
 source = "publications.bib"
